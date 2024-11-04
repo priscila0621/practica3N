@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using practica3N.Models;
+using practica3N.Servicios;
 
 namespace practica3N
 {
@@ -20,16 +21,12 @@ namespace practica3N
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            // Crear una instancia de la clase Login
-            Login login = new Login();
+            // Crear una instancia del struct UsuarioInfo con los datos de los TextBox
+            UsuarioInfo usuarioInfo = new UsuarioInfo(tbUsuario.Text, tbPw.Text);
 
-            // Llamar al método ValidarUsuario y mostrar el resultado
-            string usuario = tbUsuario.Text;
-            string password = tbPw.Text;
-            string mensaje = login.ValidarUsuario(usuario, password);
-
-            // Mostrar mensaje en un MessageBox
-            MessageBox.Show(mensaje);
+            // Crear una instancia de LoginManager y llamar al método de validación
+            LoginManager loginManager = new LoginManager();
+            loginManager.ValidarYMostrarMensaje(usuarioInfo);
         }
     }
 }
