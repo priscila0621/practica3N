@@ -31,7 +31,6 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.BtnLogin = new MetroFramework.Controls.MetroButton();
             this.tbUsuario = new MetroFramework.Controls.MetroTextBox();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.tbPw = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
@@ -39,7 +38,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(254, 102);
+            this.metroLabel1.Location = new System.Drawing.Point(56, 101);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(56, 19);
             this.metroLabel1.TabIndex = 5;
@@ -47,7 +46,7 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(316, 194);
+            this.BtnLogin.Location = new System.Drawing.Point(118, 193);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(98, 37);
             this.BtnLogin.TabIndex = 6;
@@ -70,7 +69,7 @@
             this.tbUsuario.CustomButton.UseSelectable = true;
             this.tbUsuario.CustomButton.Visible = false;
             this.tbUsuario.Lines = new string[0];
-            this.tbUsuario.Location = new System.Drawing.Point(316, 98);
+            this.tbUsuario.Location = new System.Drawing.Point(118, 97);
             this.tbUsuario.MaxLength = 32767;
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.PasswordChar = '\0';
@@ -85,23 +84,10 @@
             this.tbUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tbUsuario.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroPanel1
-            // 
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(34, 98);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(178, 133);
-            this.metroPanel1.TabIndex = 8;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(232, 143);
+            this.metroLabel2.Location = new System.Drawing.Point(34, 142);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(78, 19);
             this.metroLabel2.TabIndex = 9;
@@ -122,7 +108,7 @@
             this.tbPw.CustomButton.UseSelectable = true;
             this.tbPw.CustomButton.Visible = false;
             this.tbPw.Lines = new string[0];
-            this.tbPw.Location = new System.Drawing.Point(316, 139);
+            this.tbPw.Location = new System.Drawing.Point(118, 138);
             this.tbPw.MaxLength = 32767;
             this.tbPw.Name = "tbPw";
             this.tbPw.PasswordChar = '*';
@@ -141,10 +127,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 290);
+            this.ClientSize = new System.Drawing.Size(342, 290);
             this.Controls.Add(this.tbPw);
             this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.metroLabel1);
@@ -161,7 +146,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroButton BtnLogin;
         private MetroFramework.Controls.MetroTextBox tbUsuario;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTextBox tbPw;
     }
