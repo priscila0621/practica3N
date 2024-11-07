@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace practica3N.Formularios
 {
-    public partial class Menu : MetroFramework.Forms.MetroForm
+    public partial class RegistrationForm : MetroFramework.Forms.MetroForm
     {
-        public Menu()
+        public RegistrationForm()
         {
             InitializeComponent();
         }
 
-        private void registrarDatosDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RegistrationForm_Load(object sender, EventArgs e)
         {
 
         }

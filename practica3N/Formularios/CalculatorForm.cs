@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace practica3N.Formularios
 {
-    public partial class Menu : MetroFramework.Forms.MetroForm
+    public partial class CalculatorForm : MetroFramework.Forms.MetroForm
     {
-        public Menu()
+        public CalculatorForm()
         {
             InitializeComponent();
-        }
-
-        private void registrarDatosDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

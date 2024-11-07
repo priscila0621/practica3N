@@ -31,8 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.registrarDatosDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.convertirTemperaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.capturarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraDeEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraIMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,16 +62,81 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // formulariosToolStripMenuItem
+            // 
+            this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarDatosDeUsuarioToolStripMenuItem,
+            this.calculadoraToolStripMenuItem,
+            this.convertirTemperaturasToolStripMenuItem,
+            this.capturarDatosToolStripMenuItem,
+            this.controlDeInventarioToolStripMenuItem,
+            this.calculadoraDeEdadToolStripMenuItem,
+            this.encuestaToolStripMenuItem,
+            this.calculadoraIMCToolStripMenuItem,
+            this.editorDeTextoToolStripMenuItem});
+            this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
+            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.formulariosToolStripMenuItem.Text = "Formularios";
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // formulariosToolStripMenuItem
+            // registrarDatosDeUsuarioToolStripMenuItem
             // 
-            this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
-            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.formulariosToolStripMenuItem.Text = "Formularios";
+            this.registrarDatosDeUsuarioToolStripMenuItem.Name = "registrarDatosDeUsuarioToolStripMenuItem";
+            this.registrarDatosDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.registrarDatosDeUsuarioToolStripMenuItem.Text = "Registrar datos de usuario";
+            this.registrarDatosDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.registrarDatosDeUsuarioToolStripMenuItem_Click);
+            // 
+            // calculadoraToolStripMenuItem
+            // 
+            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.calculadoraToolStripMenuItem.Text = "Calculadora";
+            // 
+            // convertirTemperaturasToolStripMenuItem
+            // 
+            this.convertirTemperaturasToolStripMenuItem.Name = "convertirTemperaturasToolStripMenuItem";
+            this.convertirTemperaturasToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.convertirTemperaturasToolStripMenuItem.Text = "Convertir temperaturas";
+            // 
+            // capturarDatosToolStripMenuItem
+            // 
+            this.capturarDatosToolStripMenuItem.Name = "capturarDatosToolStripMenuItem";
+            this.capturarDatosToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.capturarDatosToolStripMenuItem.Text = "Capturar datos";
+            // 
+            // controlDeInventarioToolStripMenuItem
+            // 
+            this.controlDeInventarioToolStripMenuItem.Name = "controlDeInventarioToolStripMenuItem";
+            this.controlDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.controlDeInventarioToolStripMenuItem.Text = "Control de inventario";
+            // 
+            // calculadoraDeEdadToolStripMenuItem
+            // 
+            this.calculadoraDeEdadToolStripMenuItem.Name = "calculadoraDeEdadToolStripMenuItem";
+            this.calculadoraDeEdadToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.calculadoraDeEdadToolStripMenuItem.Text = "Calculadora de edad";
+            // 
+            // encuestaToolStripMenuItem
+            // 
+            this.encuestaToolStripMenuItem.Name = "encuestaToolStripMenuItem";
+            this.encuestaToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.encuestaToolStripMenuItem.Text = "Encuesta";
+            // 
+            // calculadoraIMCToolStripMenuItem
+            // 
+            this.calculadoraIMCToolStripMenuItem.Name = "calculadoraIMCToolStripMenuItem";
+            this.calculadoraIMCToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.calculadoraIMCToolStripMenuItem.Text = "Calculadora IMC";
+            // 
+            // editorDeTextoToolStripMenuItem
+            // 
+            this.editorDeTextoToolStripMenuItem.Name = "editorDeTextoToolStripMenuItem";
+            this.editorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.editorDeTextoToolStripMenuItem.Text = "Editor de texto";
             // 
             // Menu
             // 
@@ -86,5 +160,14 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem registrarDatosDeUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem convertirTemperaturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem capturarDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controlDeInventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculadoraDeEdadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encuestaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculadoraIMCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
     }
 }
