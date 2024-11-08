@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using practica3N.Formularios;
 using practica3N.Models;
 using practica3N.Servicios;
 
@@ -26,7 +27,13 @@ namespace practica3N
 
             // Crear una instancia de LoginManager y llamar al método de validación
             LoginManager loginManager = new LoginManager();
-            loginManager.ValidarYMostrarMensaje(usuarioInfo);
+            if (loginManager.ValidarYMostrarMensaje(usuarioInfo))
+            {
+                // Abrir el formulario MenuFormulario si la validación es correcta
+                MenuFormulario menuForm = new MenuFormulario();
+                menuForm.Show();
+                this.Hide(); // Oculta el formulario de inicio de sesión
+            }
         }
     }
 }

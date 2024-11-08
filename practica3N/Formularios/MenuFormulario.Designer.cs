@@ -1,6 +1,6 @@
 ﻿namespace practica3N.Formularios
 {
-    partial class Menu
+    partial class MenuFormulario
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.registrarDatosDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuRegistro = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.convertirTemperaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capturarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +41,7 @@
             this.encuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraIMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,9 +50,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.formulariosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,7 +65,7 @@
             // formulariosToolStripMenuItem
             // 
             this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarDatosDeUsuarioToolStripMenuItem,
+            this.MnuRegistro,
             this.calculadoraToolStripMenuItem,
             this.convertirTemperaturasToolStripMenuItem,
             this.capturarDatosToolStripMenuItem,
@@ -78,17 +78,12 @@
             this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.formulariosToolStripMenuItem.Text = "Formularios";
             // 
-            // contextMenuStrip1
+            // MnuRegistro
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // registrarDatosDeUsuarioToolStripMenuItem
-            // 
-            this.registrarDatosDeUsuarioToolStripMenuItem.Name = "registrarDatosDeUsuarioToolStripMenuItem";
-            this.registrarDatosDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.registrarDatosDeUsuarioToolStripMenuItem.Text = "Registrar datos de usuario";
-            this.registrarDatosDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.registrarDatosDeUsuarioToolStripMenuItem_Click);
+            this.MnuRegistro.Name = "MnuRegistro";
+            this.MnuRegistro.Size = new System.Drawing.Size(210, 22);
+            this.MnuRegistro.Text = "Registrar datos de usuario";
+            this.MnuRegistro.Click += new System.EventHandler(this.registrarDatosDeUsuarioToolStripMenuItem_Click);
             // 
             // calculadoraToolStripMenuItem
             // 
@@ -138,14 +133,19 @@
             this.editorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.editorDeTextoToolStripMenuItem.Text = "Editor de texto";
             // 
-            // Menu
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // MenuFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Menu";
+            this.Name = "MenuFormulario";
             this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -160,7 +160,7 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem registrarDatosDeUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnuRegistro;
         private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem convertirTemperaturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem capturarDatosToolStripMenuItem;

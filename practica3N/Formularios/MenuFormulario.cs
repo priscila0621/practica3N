@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace practica3N.Formularios
 {
-    public partial class Menu : MetroFramework.Forms.MetroForm
+    public partial class MenuFormulario : MetroFramework.Forms.MetroForm
     {
-        public Menu()
+        public MenuFormulario()
         {
             InitializeComponent();
         }
 
         private void registrarDatosDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Crear una nueva instancia del formulario RegistrationForm
+            RegistrationForm registrationForm = new RegistrationForm();
 
+            // Mostrar el formulario
+            registrationForm.Show();
         }
     }
 }
